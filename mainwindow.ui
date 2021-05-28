@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Duck Decryptor</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/duck.ico</normaloff>:/icons/duck.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPlainTextEdit" name="textEdit">
     <property name="geometry">
@@ -135,6 +139,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -4,6 +4,7 @@
 KeyDialog::KeyDialog(QWidget *parent) :QDialog(parent),ui(new Ui::KeyDialog)
 {
     ui->setupUi(this);
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
     connect(ui->okButton, SIGNAL(clicked()), this, SLOT(okButtonClicked()));
     connect(ui->cancelButton, SIGNAL(clicked()), this, SLOT(cancelButtonClicked()));
 }
